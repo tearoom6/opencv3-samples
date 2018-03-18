@@ -33,7 +33,7 @@ int main(int argc, char* argv[])
         imshow("src", src);
         imshow("dst", dst);
 
-        imwrite("tmp/dst.jpg", dst);
+        imwrite("tmp/rotate_image.jpg", dst.getMat(ACCESS_RW));
 
         waitKey(0);
     }
